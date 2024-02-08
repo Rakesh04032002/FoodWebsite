@@ -7,7 +7,7 @@
     "start":"cd server && npm start",
     "prebuild": "cd server && npm install && cd ../client && npm install",
     "build": "cd client && npm run build",
-    "postbuild": "move /Y client\\build server\\src\\public"
+    "postbuild": "mv -f client/build/* server/src/public"
 
   },
   "keywords": [],
